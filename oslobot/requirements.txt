@@ -1,0 +1,10 @@
+errbot
+errbot[irc]
+six
+irc
+python-dateutil
+requests
+oslo.utils
+tabulate
+feedparser
+futures>=3.0;python_version=='2.7' or python_version=='2.6' # BSD
