@@ -1,0 +1,32 @@
+[dashboard]
+title = Oslo Review Inbox(Part Two)
+description = Review Inbox(Part Two)
+foreach = project:^openstack/oslo.*
+          status:open NOT owner:self
+
+[section "oslo.privsep"]
+query = project:openstack/oslo.privsep
+
+[section "oslo.reports"]
+query = project:openstack/oslo.reports
+
+[section "oslo.rootwrap"]
+query = project:openstack/oslo.rootwrap
+
+[section "oslo.serialization"]
+query = project:openstack/oslo.serialization
+
+[section "oslo.service"]
+query = project:openstack/oslo.service
+
+[section "oslo.tools"]
+query = project:openstack/oslo.tools
+
+[section "oslo.utils"]
+query = project:openstack/oslo.utils
+
+[section "oslo.versionedobjects"]
+query = project:openstack/oslo.versionedobjects
+
+[section "oslo.vmware"]
+query = project:openstack/oslo.vmware
