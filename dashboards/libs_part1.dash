@@ -1,12 +1,7 @@
 [dashboard]
 title = Oslo Review Inbox(Part One)
 description = Review Inbox(Part One)
-foreach = (project:^openstack/oslo.* OR project:openstack/debtcollector OR
-           project:openstack/castellan OR project:openstack/futurist OR
-           project:openstack/automaton OR project:openstack-dev/cookiecutter OR
-           project:openstack/debtcollector OR
-           project:openstack-dev/oslo-cookiecutter OR project:openstack/mox3)
-           status:open NOT owner:self
+foreach = status:open NOT owner:self
 
 [section "Oslo Specs"]
 query = project:openstack/oslo-specs

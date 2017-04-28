@@ -1,8 +1,7 @@
 [dashboard]
 title = Oslo Review Inbox(Part Two)
 description = Review Inbox(Part Two)
-foreach = project:^openstack/oslo.*
-          status:open NOT owner:self
+foreach = status:open NOT owner:self
 
 [section "oslo.privsep"]
 query = project:openstack/oslo.privsep
