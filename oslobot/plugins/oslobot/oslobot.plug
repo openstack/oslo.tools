@@ -1,0 +1,10 @@
+[Core]
+Name = oslobot
+Module = oslobot
+
+[Documentation]
+Description = This plugin is the goto bot for oslo admin-assistant activities.
+
+[Python]
+Version = 2+
+
