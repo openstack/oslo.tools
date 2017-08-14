@@ -26,7 +26,7 @@ NOTIFY_PEPS = [
     'rpodolyaka', 'spamaps', 'sergmelikyan', 'sreshetnyak',
     'sileht', 'sreshetnyak', 'stevemar', 'therve', 'thinrichs',
     'toabctl', 'viktors', 'zhiyan', 'zzzeek', 'gcb',
-    'Nakato', 'rbradfor',
+    'Nakato', 'rbradfor', 'zxy',
 ]
 NOTIFY_PEPS = sorted(NOTIFY_PEPS, key=str.lower)
 NUM_PER_LINE = 7
