@@ -32,7 +32,7 @@ def main():
                                                'governance'))
     project_input = os.path.join(gov_repo, 'reference/projects.yaml')
     with open(project_input, 'r') as f:
-        project = yaml.load(f.read())
+        project = yaml.safe_load(f.read())
 
     repos = []
     for v in project['oslo']['deliverables'].values():
