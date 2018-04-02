@@ -18,15 +18,14 @@ import collections
 import sys
 
 NOTIFY_PEPS = [
-    'GheRivero', 'amotoki', 'amrith', 'ansmith', 'bknudson', 'bnemec',
+    'amotoki', 'amrith', 'ansmith', 'bnemec',
     'dansmith', 'dhellmann', 'dims', 'dougwig', 'e0ne', 'flaper87',
-    'garyk', 'haypo', 'electrocucaracha', 'jd__', 'jecarey',
+    'garyk', 'haypo', 'electrocucaracha', 'jd__',
     'johnsom', 'jungleboyj', 'kgiusti', 'kragniz', 'lhx_',
-    'lifeless', 'lxsli', 'ozamiatin', 'raildo', 'redrobot', 'crushil',
-    'rpodolyaka', 'spamaps', 'sergmelikyan',
+    'raildo', 'redrobot', 'spamaps',
     'sileht', 'sreshetnyak', 'stevemar', 'therve', 'thinrichs',
-    'toabctl', 'viktors', 'zhiyan', 'zzzeek', 'gcb',
-    'Nakato', 'rbradfor', 'zxy',
+    'toabctl', 'zhiyan', 'zzzeek', 'gcb',
+    'zxy',
 ]
 NOTIFY_PEPS = sorted(NOTIFY_PEPS, key=str.lower)
 NUM_PER_LINE = 7
