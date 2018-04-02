@@ -18,7 +18,7 @@ import collections
 import sys
 
 NOTIFY_PEPS = [
-    'GheRivero', 'amotoki', 'amrith', 'bknudson', 'bnemec',
+    'GheRivero', 'amotoki', 'amrith', 'ansmith', 'bknudson', 'bnemec',
     'dansmith', 'dhellmann', 'dims', 'dougwig', 'e0ne', 'flaper87',
     'garyk', 'haypo', 'electrocucaracha', 'jd__', 'jecarey',
     'johnsom', 'jungleboyj', 'kgiusti', 'kragniz', 'lhx_',
