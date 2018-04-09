@@ -23,7 +23,7 @@ NOTIFY_PEPS = [
     'garyk', 'haypo', 'electrocucaracha', 'jd__',
     'johnsom', 'jungleboyj', 'kgiusti', 'kragniz', 'lhx_',
     'raildo', 'redrobot', 'spamaps',
-    'sileht', 'sreshetnyak', 'stevemar', 'therve', 'thinrichs',
+    'sileht', 'sreshetnyak', 'stephenfin', 'stevemar', 'therve', 'thinrichs',
     'toabctl', 'zhiyan', 'zzzeek', 'gcb',
     'zxy',
 ]
