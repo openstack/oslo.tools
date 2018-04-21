@@ -3,7 +3,7 @@
 # This requires gitinspector to be installed
 # it can be gotten from:
 #
-# - https://pypi.python.org/pypi/gitinspector/0.3.2
+# - https://pypi.org/project/gitinspector/0.3.2
 # - https://github.com/ejwa/gitinspector
 
 # Check out a new copy of a repository and set it up to be a useful

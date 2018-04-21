@@ -135,7 +135,7 @@ class OsloBotPlugin(BotPlugin):
         'periodic_connect_timeout': 1.0,
         'periodic_url_tpl': ("http://health.openstack.org/runs/key/"
                              "build_name/%(build_name)s/recent/rss"),
-        # See: https://pypi.python.org/pypi/tabulate
+        # See: https://pypi.org/project/tabulate
         'tabulate_format': 'plain',
         'periodic_exclude_when': {
             # Exclude failure results that are more than X months old...
