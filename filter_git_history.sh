@@ -30,7 +30,7 @@ for file in $files_to_keep; do
         if git merge-base --is-ancestor $root $file_root; then
             fail=1
             break
-        elif !git merge-base --is-ancestor $file_root $root; then
+        elif ! git merge-base --is-ancestor $file_root $root; then
             new_roots="$new_roots $root"
         fi
     done
