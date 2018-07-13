@@ -183,7 +183,7 @@ function run_pep8 {
 }
 
 
-TESTRTESTS="lockutils-wrapper python setup.py testr"
+TESTRTESTS="lockutils-wrapper stestr"
 
 if [ ${NO_SITE_PACKAGES} -eq 1 ]; then
   INSTALLVENVOPTS="--no-site-packages"

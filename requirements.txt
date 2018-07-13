@@ -5,3 +5,4 @@ argparse
 oslo.config
 jinja2
 parawrap
+stestr
