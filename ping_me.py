@@ -22,7 +22,7 @@ NOTIFY_PEPS = [
     'dansmith', 'dhellmann', 'dims', 'dougwig', 'e0ne', 'flaper87',
     'garyk', 'haypo', 'electrocucaracha', 'jd__',
     'johnsom', 'jungleboyj', 'kgiusti', 'kragniz', 'lhx_',
-    'njohnston', 'raildo', 'redrobot', 'spamaps',
+    'njohnston', 'raildo', 'redrobot',
     'sileht', 'sreshetnyak', 'stephenfin', 'stevemar', 'therve', 'thinrichs',
     'toabctl', 'zhiyan', 'zzzeek', 'gcb',
     'zxy',
