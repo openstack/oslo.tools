@@ -21,7 +21,7 @@ NOTIFY_PEPS = [
     'amotoki', 'amrith', 'ansmith', 'bnemec',
     'dansmith', 'dhellmann', 'dims', 'dougwig', 'e0ne', 'flaper87',
     'garyk', 'haypo', 'electrocucaracha', 'jd__',
-    'johnsom', 'jungleboyj', 'kgiusti', 'kragniz', 'lhx_',
+    'johnsom', 'jungleboyj', 'kgiusti', 'kragniz', 'lhx_', 'moguimar',
     'njohnston', 'raildo', 'redrobot',
     'sileht', 'sreshetnyak', 'stephenfin', 'stevemar', 'therve', 'thinrichs',
     'toabctl', 'zhiyan', 'zzzeek', 'gcb',
