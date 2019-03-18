@@ -19,7 +19,7 @@ import sys
 
 NOTIFY_PEPS = [
     'amotoki', 'amrith', 'ansmith', 'bnemec',
-    'dansmith', 'dhellmann', 'dims', 'dougwig', 'e0ne', 'flaper87',
+    'dansmith', 'dims', 'dougwig', 'e0ne', 'flaper87',
     'garyk', 'haypo', 'hberaud', 'electrocucaracha', 'jd__',
     'johnsom', 'jungleboyj', 'kgiusti', 'kragniz', 'lhx_', 'moguimar',
     'njohnston', 'raildo', 'redrobot',
