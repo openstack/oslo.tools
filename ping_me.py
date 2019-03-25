@@ -26,7 +26,6 @@ NOTIFY_PEPS = [
     'dims',
     'dougwig',
     'e0ne',
-    'flaper87',
     'garyk',
     'haypo',
     'hberaud',
