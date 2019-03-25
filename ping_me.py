@@ -29,6 +29,11 @@ NOTIFY_PEPS = [
 ]
 NOTIFY_PEPS = sorted(NOTIFY_PEPS, key=str.lower)
 NUM_PER_LINE = 7
+INFO_MESSAGE = ('To be added or removed from the ping list, please submit a '
+                'patch to '
+                'http://git.openstack.org/cgit/openstack/oslo.tools/tree/'
+                'ping_me.py\n'
+                )
 
 
 def main():
@@ -49,6 +54,7 @@ def main():
                 sys.stdout.write(", ")
     if num_in_line:
         sys.stdout.write("\n")
+    sys.stdout.write(INFO_MESSAGE)
 
 
 if __name__ == '__main__':
