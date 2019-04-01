@@ -22,7 +22,6 @@ NOTIFY_PEPS = [
     'amrith',
     'ansmith',
     'bnemec',
-    'dansmith',
     'dims',
     'dougwig',
     'e0ne',
