@@ -55,7 +55,7 @@ NOTIFY_PEPS = sorted(NOTIFY_PEPS, key=str.lower)
 NUM_PER_LINE = 7
 INFO_MESSAGE = ('To be added or removed from the ping list, please submit a '
                 'patch to '
-                'http://git.openstack.org/cgit/openstack/oslo.tools/tree/'
+                'http://opendev.org/openstack/oslo.tools/tree/'
                 'ping_me.py\n'
                 )
 
