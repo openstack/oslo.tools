@@ -42,7 +42,7 @@ done
 # Purge all parents for those commits
 
 set_roots="
-if [ 1 -eq 0 $(for root in $roots; do echo " -o \"\$GIT_COMMIT\" = '$root' "; done) ]; then
+if [ 1 -eq 0 $(for root in $roots; do echo -n " -o \"\$GIT_COMMIT\" = '$root' "; done) ]; then
     echo '';
 else
     cat;
