@@ -1,0 +1,12 @@
+- project:
+    templates:
+      - openstack-python3-ussuri-jobs
+      - build-openstack-docs-pti
+    check:
+      jobs:
+        - openstack-tox-pep8:
+            irrelevant-files:
+              - ^doc/.*$
+        - openstack-tox-bashate:
+            files:
+              - ^.*\.sh$

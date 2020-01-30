@@ -21,8 +21,7 @@ repodir=$(cd $bindir/../../.. && pwd)
 # Make sure no pager is configured so the output is not blocked
 export PAGER=
 
-if [ -z "$*" ]
-then
+if [ -z "$*" ]; then
     libs=$($bindir/list_oslo_projects.py | egrep -v -e '(oslo.version|cookiecutter|incubator)')
 else
     libs="$*"
@@ -36,13 +35,11 @@ function get_last_tag {
 
 function list_versions {
     # Show the tag for each library
-    for lib in $*
-    do
+    for lib in $*; do
         the_date=""
         cd $repodir/$lib
         highest_tag=$(get_last_tag)
-        if [ -z "$highest_tag" ]
-        then
+        if [ -z "$highest_tag" ]; then
             the_date="0000-00-00 00:00:00 +0000"
             highest_tag="UNRELEASED"
         else

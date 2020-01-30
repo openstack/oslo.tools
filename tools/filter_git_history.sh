@@ -6,8 +6,8 @@
 set -e
 
 if [ $# -lt 1 ]; then
-  echo "Usage $0 <files to keep>"
-  exit 1
+    echo "Usage $0 <files to keep>"
+    exit 1
 fi
 
 set -x

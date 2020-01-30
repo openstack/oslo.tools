@@ -14,26 +14,24 @@ from __future__ import absolute_import
 from __future__ import unicode_literals
 
 import collections
+from concurrent import futures
 import copy
 from datetime import date
 import json
 import re
 
-from concurrent import futures
-import six
-from six.moves import http_client
-
 from dateutil import parser
 from dateutil.relativedelta import relativedelta
 
+from errbot import botcmd
+from errbot import BotPlugin
 import feedparser
 from oslo_utils import timeutils
 import requests
+import six
+from six.moves import http_client
 from six.moves.urllib.parse import urlencode as compat_urlencode
 from tabulate import tabulate
-
-from errbot import botcmd
-from errbot import BotPlugin
 
 BAD_VALUE = '??'
 NA_VALUE = "N/A"
@@ -311,8 +309,8 @@ class OsloBotPlugin(BotPlugin):
                     'last_fail_url': BAD_VALUE,
                 }
             else:
-                if (r.status_code == http_client.BAD_REQUEST
-                        and 'No Failed Runs' in r.text):
+                if (r.status_code == http_client.BAD_REQUEST and
+                        'No Failed Runs' in r.text):
                     return {
                         'status': 'All OK (no recent failures)',
                         'last_fail': NA_VALUE,
@@ -365,7 +363,7 @@ class OsloBotPlugin(BotPlugin):
         ]
         tbl_body = []
         if (self.config['periodic_shorten'] and
-                self.config['shortener_api_key']):
+           self.config['shortener_api_key']):
             s = GoogleShortener(
                 self.log, self.config['shortener_api_key'],
                 timeout=(self.config['shortener_connect_timeout'],
