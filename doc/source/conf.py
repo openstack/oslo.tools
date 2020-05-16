@@ -26,9 +26,9 @@ extensions = [
 ]
 
 # openstackdocstheme options
-repository_name = 'openstack/oslo.tools'
-bug_project = 'oslo.tools'
-bug_tag = ''
+openstackdocs_repo_name = 'openstack/oslo.tools'
+openstackdocs_bug_project = 'oslo.tools'
+openstackdocs_bug_tag = ''
 
 # The suffix of source filenames.
 source_suffix = '.rst'
