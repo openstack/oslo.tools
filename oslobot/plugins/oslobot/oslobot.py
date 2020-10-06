@@ -14,8 +14,11 @@ import collections
 from concurrent import futures
 import copy
 from datetime import date
+import http.client as http_client
+import io
 import json
 import re
+from urllib.parse import urlencode as compat_urlencode
 
 from dateutil import parser
 from dateutil.relativedelta import relativedelta
@@ -25,9 +28,6 @@ from errbot import BotPlugin
 import feedparser
 from oslo_utils import timeutils
 import requests
-import six
-from six.moves import http_client
-from six.moves.urllib.parse import urlencode as compat_urlencode
 from tabulate import tabulate
 
 BAD_VALUE = '??'
@@ -383,7 +383,7 @@ class OsloBotPlugin(BotPlugin):
                     str(last_fail_url),
                     str(result.get('discarded', 0)),
                 ])
-        buf = six.StringIO()
+        buf = io.StringIO()
         buf.write(tabulate(tbl_body, tbl_headers,
                            tablefmt=self.config['tabulate_format']))
         return buf.getvalue()

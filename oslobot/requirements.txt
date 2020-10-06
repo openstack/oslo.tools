@@ -1,6 +1,5 @@
 errbot
 errbot[irc]
-six
 irc
 python-dateutil
 requests
