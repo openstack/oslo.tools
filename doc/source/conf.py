@@ -37,7 +37,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-copyright = u'2020, OpenStack Foundation'
+copyright = '2020, OpenStack Foundation'
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'native'
