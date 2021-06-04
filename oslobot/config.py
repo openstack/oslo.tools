@@ -38,7 +38,7 @@ BOT_ADMINS = [
 # The following will change depending on the backend selected...
 BACKEND = 'IRC'
 BOT_IDENTITY = {
-    'server': 'chat.freenode.net',
+    'server': 'irc.oftc.net',
     'nickname': 'oslobot',
 }
 COMPACT_OUTPUT = False
