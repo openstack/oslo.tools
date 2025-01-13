@@ -29,7 +29,7 @@ def main():
     gov_repo = os.path.expanduser(os.path.join(conf.repo_root,
                                                'governance'))
     project_input = os.path.join(gov_repo, 'reference/projects.yaml')
-    with open(project_input, 'r') as f:
+    with open(project_input) as f:
         project = yaml.safe_load(f.read())
 
     repos = []

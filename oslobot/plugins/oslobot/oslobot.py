@@ -38,7 +38,7 @@ def str_split(text):
     return text.split()
 
 
-class GoogleShortener(object):
+class GoogleShortener:
     """Shortener that uses google shortening service (requires api key).
 
     See: https://developers.google.com/url-shortener/v1/
@@ -58,7 +58,7 @@ class GoogleShortener(object):
     def safe_shorten(self, long_url):
         try:
             return self.shorten(long_url)
-        except (IOError, ValueError, TypeError):
+        except (OSError, ValueError, TypeError):
             self.log.exception("Failed shortening due to unexpected error, "
                                " providing back long url.")
             return long_url
@@ -78,12 +78,12 @@ class GoogleShortener(object):
                                 headers={'content-type': 'application/json'},
                                 timeout=self.timeout)
         except requests.Timeout:
-            raise IOError("Unable to shorten '%s' url"
+            raise OSError("Unable to shorten '%s' url"
                           " due to http request timeout being"
                           " reached" % (long_url))
         else:
             if req.status_code != http_client.OK:
-                raise IOError("Unable to shorten '%s' url due to http"
+                raise OSError("Unable to shorten '%s' url due to http"
                               " error '%s' (%s)" % (long_url, req.reason,
                                                     req.status_code))
             try:
@@ -91,7 +91,7 @@ class GoogleShortener(object):
                 self.cache[long_url] = small_url
                 return small_url
             except (KeyError, ValueError, TypeError) as e:
-                raise IOError("Unable to shorten '%s' url due to request"
+                raise OSError("Unable to shorten '%s' url due to request"
                               " extraction error: %s" % (long_url, e))
 
 
@@ -159,7 +159,7 @@ class OsloBotPlugin(BotPlugin):
         if not configuration:
             configuration = {}
         configuration.update(copy.deepcopy(self.DEF_CONFIG))
-        super(OsloBotPlugin, self).configure(configuration)
+        super().configure(configuration)
         self.log.debug("Bot configuration: %s", self.config)
         self.executor = None
 
@@ -392,12 +392,12 @@ class OsloBotPlugin(BotPlugin):
         return copy.deepcopy(self.DEF_CONFIG)
 
     def deactivate(self):
-        super(OsloBotPlugin, self).deactivate()
+        super().deactivate()
         if self.executor is not None:
             self.executor.shutdown()
 
     def activate(self):
-        super(OsloBotPlugin, self).activate()
+        super().activate()
         self.executor = futures.ThreadPoolExecutor(
             max_workers=self.DEF_FETCH_WORKERS)
         try:
